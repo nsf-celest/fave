@@ -1,0 +1,20 @@
+(favesetup
+  (scene
+    (patch (dressing TreeBare)
+           (distrib (5 (pickable GreenApple neutral 0))
+	            (1 (pickable YellowApple bad   -5))
+	            (1 (pickable YellowApple good   5))
+	   (npickable 25)
+    )
+    (patch (npickable 10)
+           (dressing TreeLeafy)
+    )
+  )
+  (nav
+    kbd
+  )
+  (record
+    local.out
+  )
+)
+
