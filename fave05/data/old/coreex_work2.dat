@@ -1,0 +1,55 @@
+(scene
+
+    (sceneAdd (modelPlacer (modelFile myModels/airplane.j3o) (xyz 1.1 2.2 3.3)))
+    (sceneAdd (modelPlacer (modelFile myModels/airplane.j3o) (hpr -45.0 0.0 0.0) ))
+    (sceneAdd (modelPlacer (modelFile myModels/airplane.j3o) (xyzhpr 1.1 2.2 3.3 180.0 0.0 0.0) ))
+
+    (def p0 (xyz 1.1 2 3)
+    (def p1 (xyzhpr (0 0  10   0  45 0)
+    (def p2 (xyzhpr (0 0 -10   0 -45 0)
+
+    (def model_truck (modelFile myModels/truck.j30))
+    (def model_apple (modelFile myModels/apple.j3o))
+    (def model_orange (modelFile myModels/orange.j3o))
+
+    (sceneAdd (modelPlacer model_truck p0)
+    (sceneAdd (modelPlacer model_apple p1)
+    (sceneAdd (modelPlacer model_orange p2)
+
+)
+
+
+
+
+
+
+
+  (scene
+    (def p0 (placer (position 1.1 2 3))
+    (def p1 (placer (position 0 0 10) (orientation 0 90 0))
+    (def p2 (placer (orientation 90 90 0))
+    (def p3 (geomTransform (geomPosXYZ 6 7 3)
+                             (geomOrientHPR 60 0 30))
+
+    (def model0 (model myModels/truck.j30))
+    (def pickable0 (pickable (model0))
+    (def pickable1 (pickable (model myModels/apple.j3o))
+
+    (modelAdd model0 p0)
+    (modelAdd model0 p1)
+    (modelAdd model0 (placer (position -4 -5 2))
+    (modelAdd (model myModels/airplane.j3o) p2)
+    (modelAdd (model myModels/airplane.j3o) (placer (position -4 -5 2))
+
+    
+    (modelAdd pickable0 p3)
+    (modelAdd pickable1 (placer (position -4 5 1)))
+    (modelAdd (pickable (model myModels/orange.j3o) (placer (position 4 -5 1) (orientation -45 20, 0))))
+
+  )
+
+
+
+
+
+

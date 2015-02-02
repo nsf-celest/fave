@@ -1,0 +1,22 @@
+  (alias shape0 (sphere (center 1 2 3) (radius 1))
+  (alias orientRange0 (orientLimits -120 120 -45 45 0 0))
+  (alias frameSet0 (distrib3d shape0 orientRange0))
+
+  (alias shape1 (box -1 1 0 2 5 6))
+  (alias orientRange1 (orientLimits -180 180 -90 90 -90 90))
+  (alias frameSet1 (distrib3d shape1 orientRange1))
+
+  (alias dist0 (unifDist .1 .1 .3 .5))
+  (alias modelList0 (m0 m1 m2 m3))
+  (alias modelDist0 (distSample (10 dist0 modelList0)))
+
+  (alias dist1 (unifDist  1  1  3  5))
+
+  (scene
+    (modelAdd modelDist0)
+    (alias n1)
+    (modelAdd (distSample (n1 dist1 (myModels/plant1.j3o myModels/plant2.j3o myModels/bug0.j3o myModels/bug1.j3o))))
+    (modelAdd (distSample (35 ((unifDist 2 3 4) (myModels/chair.j3o myModels/table.j3o myModels/hat.j3o))))
+              (distrib3d  (35 ( (sphere (center 1 2 3) (radius 1)) (orientLimits -180 180 -90 90 -90 90)))))
+  )
+

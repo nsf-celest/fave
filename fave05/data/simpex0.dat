@@ -1,0 +1,11 @@
+(favesetup
+  (scene
+    (childNode (modelPlacer (modelFile Models/greenappleNoBumpmap/greenappleNoBumpmap.j3o) (xyz 1.1 0.2 -150)))
+    (childNode (modelPlacer (modelFile Models/redAppleNoBumpmap/redAppleNoBumpmap.j3o) (hpr -45.0 0.0 0.0) (size 0.01)))
+    (childNode (modelPlacer (modelFile Models/sphereOrange2/sphereOrange2.j3o)
+                             (xyzhpr -1.1 0.2 -3.3 180.0 0.0 0.0)
+			     (scale 1 0.1 1))
+    (childNode (modelPlacer (modelFile Models/tree2-prob-leaf/tree2-p050.j3o) ))
+  )
+)
+
