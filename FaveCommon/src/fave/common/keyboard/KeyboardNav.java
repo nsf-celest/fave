@@ -35,10 +35,10 @@ public class KeyboardNav /* implements ActionListener */ {
     INav navSender;
     
     public KeyboardNav(InputManager inputManager, String mode) {
-        logger.log(Level.INFO, "Enter");
+        // System.out.println("Enter");
         allAction = true;
         setupKeys(inputManager, mode);
-        logger.log(Level.INFO, "Leave");
+        // System.out.println("Leave");
     }
     public void setNavSender(INav navSender) {
         this.navSender = navSender;
