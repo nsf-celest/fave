@@ -12,7 +12,7 @@ package fave.examples.intro;
 import fave.common.parsecore.ParseCoreRoot;
 import favevex.SSExpr;
 
-public class TestEx4 extends FaveSimpleAppIntro {
+public class ExampleBasic extends FaveSimpleAppIntro {
     static String[] configFiles = null;
     ParseCoreRoot sroot = null;
     
@@ -39,7 +39,7 @@ public class TestEx4 extends FaveSimpleAppIntro {
   
     public static void main(String[] args) {
         configFiles = args;
-        TestEx4 app = new TestEx4();
+        ExampleBasic app = new ExampleBasic();
         app.start();
     }
 }
