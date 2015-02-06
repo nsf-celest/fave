@@ -1,17 +1,17 @@
 (favesetup
   (scene
 
-    (sgnode (xyz 0 0 0)
+    (sgnode (xyz 0 -5 0)  (size 0.1)
             (model (modelFile Models/grass_ground/grass_ground.j3o) ))
 
-    (sgnode (xyzhpr 0 1 0  45 0 0) (size 0.5)
-            (model (modelFile Models/WoodenBox02/WoodenBox02.j3o) ))
+    (sgnode (xyzhpr 0 -3 0  0 45 0) (size 4.0)
+            (model (modelFile Models/WoodenBox02b/WoodenBox02b.j3o) ))
 
-    (sgnode (xyz 1.1 2 -3)  (size 0.01)
+    (sgnode (xyz 1.1 0 0)  (size 0.01)
             (model (modelFile Models/greenapple/greenapple.j3o) ))
 
-    (sgnode (xyz -1.1 2 -3) (size 0.01)
-	    (model (modelFile Models/redAppleK/redAppleK.j3o)))
+    (sgnode (xyz -1.1 0 0) (size 0.01)
+	    (model (modelFile Models/redappleK/redappleK.j3o)))
 
   )
 )
