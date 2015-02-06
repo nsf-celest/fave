@@ -1,0 +1,2 @@
+java -jar ../dist/FaveExample.jar config/gameplay1.cfg config/example1.cfg
+
