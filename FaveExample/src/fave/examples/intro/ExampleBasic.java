@@ -19,7 +19,7 @@ public class ExampleBasic extends FaveSimpleAppIntro {
     @Override
     public void simpleInitApp() {
         if (playsettings == null)
-            System.out.println("TestEx4 null playsettings");
+            System.out.println("ExampleBasic null playsettings");
         for (String config : configFiles) {
             SSExpr expr = SSExpr.fromFile(config);
             // expr.stringDump();
