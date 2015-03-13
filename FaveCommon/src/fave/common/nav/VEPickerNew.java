@@ -53,9 +53,8 @@ public class VEPickerNew {
         this.pickables = pickables;
         // this.recorder = recorder;
         this.maxPickDistance = maxPickDistance;
-        if (useMark) {
+        if (useMark)
             initMark();
-        }
     }
     
     public void setAudioManager(AudioManager audioManager) {
